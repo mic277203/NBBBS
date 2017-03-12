@@ -7,6 +7,9 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
+using NBBBS.Web.Model;
+using Microsoft.EntityFrameworkCore;
+using MySQL.Data.EntityFrameworkCore.Extensions;
 
 namespace NBBBS.Web
 {
@@ -20,6 +23,8 @@ namespace NBBBS.Web
                 .AddJsonFile($"appsettings.{env.EnvironmentName}.json", optional: true)
                 .AddEnvironmentVariables();
             Configuration = builder.Build();
+            //更新数据库 会删除之前的数据，请谨慎使用
+            //NBBBSContextFactory.Create(Configuration.GetConnectionString("ConStr"));
         }
 
         public IConfigurationRoot Configuration { get; }
@@ -29,6 +34,7 @@ namespace NBBBS.Web
         {
             // Add framework services.
             services.AddMvc();
+            services.AddDbContext<NBBBSContext>(options => options.UseMySQL(Configuration.GetConnectionString("ConStr")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

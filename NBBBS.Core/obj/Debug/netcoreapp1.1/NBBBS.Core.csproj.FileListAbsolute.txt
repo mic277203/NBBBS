@@ -1,0 +1,6 @@
+G:\MyProject\NBBBS\NBBBS.Core\bin\Debug\netcoreapp1.1\NBBBS.Core.deps.json
+G:\MyProject\NBBBS\NBBBS.Core\bin\Debug\netcoreapp1.1\NBBBS.Core.dll
+G:\MyProject\NBBBS\NBBBS.Core\bin\Debug\netcoreapp1.1\NBBBS.Core.pdb
+G:\MyProject\NBBBS\NBBBS.Core\obj\Debug\netcoreapp1.1\NBBBS.Core.AssemblyInfo.cs
+G:\MyProject\NBBBS\NBBBS.Core\obj\Debug\netcoreapp1.1\NBBBS.Core.dll
+G:\MyProject\NBBBS\NBBBS.Core\obj\Debug\netcoreapp1.1\NBBBS.Core.pdb

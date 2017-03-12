@@ -1,0 +1,9 @@
+G:\MyProject\NBBBS\NBBBS.Web\bin\Debug\netcoreapp1.1\NBBBS.Web.deps.json
+G:\MyProject\NBBBS\NBBBS.Web\bin\Debug\netcoreapp1.1\NBBBS.Web.runtimeconfig.json
+G:\MyProject\NBBBS\NBBBS.Web\bin\Debug\netcoreapp1.1\NBBBS.Web.runtimeconfig.dev.json
+G:\MyProject\NBBBS\NBBBS.Web\bin\Debug\netcoreapp1.1\NBBBS.Web.dll
+G:\MyProject\NBBBS\NBBBS.Web\obj\Debug\netcoreapp1.1\NBBBS.Web.csprojResolveAssemblyReference.cache
+G:\MyProject\NBBBS\NBBBS.Web\obj\Debug\netcoreapp1.1\NBBBS.Web.AssemblyInfo.cs
+G:\MyProject\NBBBS\NBBBS.Web\bin\Debug\netcoreapp1.1\NBBBS.Web.pdb
+G:\MyProject\NBBBS\NBBBS.Web\obj\Debug\netcoreapp1.1\NBBBS.Web.dll
+G:\MyProject\NBBBS\NBBBS.Web\obj\Debug\netcoreapp1.1\NBBBS.Web.pdb

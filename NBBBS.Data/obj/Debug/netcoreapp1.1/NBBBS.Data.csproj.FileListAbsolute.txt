@@ -1,0 +1,7 @@
+G:\MyProject\NBBBS\NBBBS.Data\bin\Debug\netcoreapp1.1\NBBBS.Data.deps.json
+G:\MyProject\NBBBS\NBBBS.Data\bin\Debug\netcoreapp1.1\NBBBS.Data.dll
+G:\MyProject\NBBBS\NBBBS.Data\bin\Debug\netcoreapp1.1\NBBBS.Data.pdb
+G:\MyProject\NBBBS\NBBBS.Data\obj\Debug\netcoreapp1.1\NBBBS.Data.csprojResolveAssemblyReference.cache
+G:\MyProject\NBBBS\NBBBS.Data\obj\Debug\netcoreapp1.1\NBBBS.Data.AssemblyInfo.cs
+G:\MyProject\NBBBS\NBBBS.Data\obj\Debug\netcoreapp1.1\NBBBS.Data.dll
+G:\MyProject\NBBBS\NBBBS.Data\obj\Debug\netcoreapp1.1\NBBBS.Data.pdb
