@@ -7,3 +7,7 @@ G:\MyProject\NBBBS\NBBBS.Web\obj\Debug\netcoreapp1.1\NBBBS.Web.AssemblyInfo.cs
 G:\MyProject\NBBBS\NBBBS.Web\bin\Debug\netcoreapp1.1\NBBBS.Web.pdb
 G:\MyProject\NBBBS\NBBBS.Web\obj\Debug\netcoreapp1.1\NBBBS.Web.dll
 G:\MyProject\NBBBS\NBBBS.Web\obj\Debug\netcoreapp1.1\NBBBS.Web.pdb
+G:\MyProject\NBBBS\NBBBS.Web\bin\Debug\netcoreapp1.1\NBBBS.Data.dll
+G:\MyProject\NBBBS\NBBBS.Web\bin\Debug\netcoreapp1.1\NBBBS.Service.dll
+G:\MyProject\NBBBS\NBBBS.Web\bin\Debug\netcoreapp1.1\NBBBS.Data.pdb
+G:\MyProject\NBBBS\NBBBS.Web\bin\Debug\netcoreapp1.1\NBBBS.Service.pdb

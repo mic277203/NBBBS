@@ -1,0 +1,13 @@
+G:\MyProject\NBBBS\NBBS.ServiceTest\bin\Debug\netcoreapp1.1\NBBS.ServiceTest.deps.json
+G:\MyProject\NBBBS\NBBS.ServiceTest\bin\Debug\netcoreapp1.1\NBBS.ServiceTest.runtimeconfig.json
+G:\MyProject\NBBBS\NBBS.ServiceTest\bin\Debug\netcoreapp1.1\NBBS.ServiceTest.runtimeconfig.dev.json
+G:\MyProject\NBBBS\NBBS.ServiceTest\bin\Debug\netcoreapp1.1\NBBS.ServiceTest.dll
+G:\MyProject\NBBBS\NBBS.ServiceTest\bin\Debug\netcoreapp1.1\NBBS.ServiceTest.pdb
+G:\MyProject\NBBBS\NBBS.ServiceTest\bin\Debug\netcoreapp1.1\NBBBS.Data.dll
+G:\MyProject\NBBBS\NBBS.ServiceTest\bin\Debug\netcoreapp1.1\NBBBS.Service.dll
+G:\MyProject\NBBBS\NBBS.ServiceTest\bin\Debug\netcoreapp1.1\NBBBS.Data.pdb
+G:\MyProject\NBBBS\NBBS.ServiceTest\bin\Debug\netcoreapp1.1\NBBBS.Service.pdb
+G:\MyProject\NBBBS\NBBS.ServiceTest\obj\Debug\netcoreapp1.1\NBBS.ServiceTest.csprojResolveAssemblyReference.cache
+G:\MyProject\NBBBS\NBBS.ServiceTest\obj\Debug\netcoreapp1.1\NBBS.ServiceTest.AssemblyInfo.cs
+G:\MyProject\NBBBS\NBBS.ServiceTest\obj\Debug\netcoreapp1.1\NBBS.ServiceTest.dll
+G:\MyProject\NBBBS\NBBS.ServiceTest\obj\Debug\netcoreapp1.1\NBBS.ServiceTest.pdb

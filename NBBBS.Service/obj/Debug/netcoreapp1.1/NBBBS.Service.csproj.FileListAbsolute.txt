@@ -5,3 +5,5 @@ G:\MyProject\NBBBS\NBBBS.Service\obj\Debug\netcoreapp1.1\NBBBS.Service.csprojRes
 G:\MyProject\NBBBS\NBBBS.Service\obj\Debug\netcoreapp1.1\NBBBS.Service.AssemblyInfo.cs
 G:\MyProject\NBBBS\NBBBS.Service\obj\Debug\netcoreapp1.1\NBBBS.Service.dll
 G:\MyProject\NBBBS\NBBBS.Service\obj\Debug\netcoreapp1.1\NBBBS.Service.pdb
+G:\MyProject\NBBBS\NBBBS.Service\bin\Debug\netcoreapp1.1\NBBBS.Data.dll
+G:\MyProject\NBBBS\NBBBS.Service\bin\Debug\netcoreapp1.1\NBBBS.Data.pdb

@@ -7,9 +7,9 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
-using NBBBS.Web.Model;
 using Microsoft.EntityFrameworkCore;
-using MySQL.Data.EntityFrameworkCore.Extensions;
+using NBBBS.Data;
+using NBBBS.Service;
 
 namespace NBBBS.Web
 {
@@ -34,7 +34,8 @@ namespace NBBBS.Web
         {
             // Add framework services.
             services.AddMvc();
-            services.AddDbContext<NBBBSContext>(options => options.UseMySQL(Configuration.GetConnectionString("ConStr")));
+            //services.AddDbContext<NBBBSContext>(options => options.UseMySQL(Configuration.GetConnectionString("ConStr")));
+            services.AddScoped<ISysUserService, SysUserService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -59,7 +60,7 @@ namespace NBBBS.Web
             {
                 routes.MapRoute(
                     name: "default",
-                    template: "{controller=Home}/{action=Index}/{id?}");
+                    template: "{controller=SysUsers}/{action=Index}/{id?}");
             });
         }
     }

@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
-using MySQL.Data.EntityFrameworkCore.Extensions;
 using System.ComponentModel.DataAnnotations;
 
 namespace NBBBS.Data
@@ -13,11 +12,14 @@ namespace NBBBS.Data
     /// </summary>
     public class NBBBSContext : DbContext
     {
-        public NBBBSContext(DbContextOptions<NBBBSContext> options)
-        : base(options)
-        { }
+        public NBBBSContext(DbContextOptions options) : base(options) { }
 
         public DbSet<SysUser> SysUsers { get; set; }
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            //optionsBuilder.UseSqlServer("server=localhost;userid=root;pwd=admin;port=3306;database=NBBBS;sslmode=none;");
+            base.OnConfiguring(optionsBuilder);
+        }
     }
 
     /// <summary>
@@ -25,17 +27,21 @@ namespace NBBBS.Data
     /// </summary>
     public static class NBBBSContextFactory
     {
+
         public static NBBBSContext Create(string connectionString)
         {
-            var optionsBuilder = new DbContextOptionsBuilder<NBBBSContext>();
-            optionsBuilder.UseMySQL(connectionString);
+            var options = new DbContextOptionsBuilder<NBBBSContext>();
+            options.UseSqlServer(connectionString);
 
             //Ensure database creation
-            var context = new NBBBSContext(optionsBuilder.Options);
-            context.Database.EnsureDeleted();
-            context.Database.EnsureCreated();
+            using (var context = new NBBBSContext(options.Options))
+            {
+                context.Database.EnsureDeleted();
+                context.Database.EnsureCreated();
 
-            return context;
+                return context;
+            }
+
         }
     }
 
