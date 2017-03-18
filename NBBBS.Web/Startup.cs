@@ -10,6 +10,8 @@ using Microsoft.Extensions.Logging;
 using Microsoft.EntityFrameworkCore;
 using NBBBS.Data;
 using NBBBS.Service;
+using NBBBS.Service.User;
+using NBBBS.Service.Category;
 
 namespace NBBBS.Web
 {
@@ -25,6 +27,7 @@ namespace NBBBS.Web
             Configuration = builder.Build();
             //更新数据库 会删除之前的数据，请谨慎使用
             //NBBBSContextFactory.Create(Configuration.GetConnectionString("ConStr"));
+
         }
 
         public IConfigurationRoot Configuration { get; }
@@ -34,8 +37,9 @@ namespace NBBBS.Web
         {
             // Add framework services.
             services.AddMvc();
-            //services.AddDbContext<NBBBSContext>(options => options.UseMySQL(Configuration.GetConnectionString("ConStr")));
+            services.AddDbContext<NBBBSContext>(options => options.UseSqlite(Configuration.GetConnectionString("ConStr")));
             services.AddScoped<ISysUserService, SysUserService>();
+            services.AddScoped<ICardCategoryService, CardCategoryService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -60,7 +64,7 @@ namespace NBBBS.Web
             {
                 routes.MapRoute(
                     name: "default",
-                    template: "{controller=SysUsers}/{action=Index}/{id?}");
+                    template: "{controller=CardCategories}/{action=Index}/{id?}");
             });
         }
     }

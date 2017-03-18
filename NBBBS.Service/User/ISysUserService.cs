@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace NBBBS.Service
+namespace NBBBS.Service.User
 {
     public interface ISysUserService
     {

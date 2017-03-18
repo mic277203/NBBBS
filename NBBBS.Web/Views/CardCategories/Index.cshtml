@@ -1,4 +1,4 @@
-@model IEnumerable<NBBBS.Data.Card>
+@model IEnumerable<NBBBS.Data.CardCategory>
 
 @{
     ViewData["Title"] = "Index";
@@ -13,10 +13,7 @@
     <thead>
         <tr>
                 <th>
-                    @Html.DisplayNameFor(model => model.Title)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.Content)
+                    @Html.DisplayNameFor(model => model.CategoryName)
                 </th>
                 <th>
                     @Html.DisplayNameFor(model => model.CreateTime)
@@ -24,12 +21,6 @@
                 <th>
                     @Html.DisplayNameFor(model => model.UpdateTime)
                 </th>
-            <th>
-                @Html.DisplayNameFor(model => model.CardCategory)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.SysUser)
-            </th>
             <th></th>
         </tr>
     </thead>
@@ -37,22 +28,13 @@
 @foreach (var item in Model) {
         <tr>
             <td>
-                @Html.DisplayFor(modelItem => item.Title)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Content)
+                @Html.DisplayFor(modelItem => item.CategoryName)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.CreateTime)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.UpdateTime)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.CardCategory.CategoryName)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.SysUser.UserCode)
             </td>
             <td>
                 <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |

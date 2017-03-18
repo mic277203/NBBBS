@@ -3,21 +3,20 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Linq;
+using Microsoft.EntityFrameworkCore;
 
-namespace NBBBS.Service
+namespace NBBBS.Service.User
 {
     public class SysUserService : ISysUserService
     {
-        private readonly NBBBSContext _context;
-
-        public SysUserService(NBBBSContext context)
+        private NBBBSContext _context;
+        public SysUserService(NBBBSContext content)
         {
-            _context = context;
+            this._context = content;
         }
         public List<SysUser> List()
         {
             return _context.SysUsers.ToList();
-
         }
         public void Add(SysUser model)
         {
